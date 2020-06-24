@@ -1,3 +1,36 @@
+html {
+    font-family: 'FontAwesome', sans-serif;
+    line-height: 36px;
+    font-size: 20px;
+}
+
+
+/* header */
+
+.container-header {
+    height: 200px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+    color: #0d9244;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-decoration: underline overline double;
+}
+
+.container-all {
+    margin-top: 200px;
+}
+
+a, :visited {
+    text-decoration: none;
+    color: black;
+}
+
 .section-heading {
     text-align: center;
 }
@@ -10,8 +43,19 @@
     text-decoration: underline overline double;
 }
 
-.title-heading h1 {
+.section-heading h1 {
     font-size: 2rem;
     margin: 0.5rem;
     color: green;
+}
+
+.recipies{
+    background-position: center;
+    background-image: url(../media/images/vegiesBackground.jpg);
+    opacity: 0.9;
+    filter: grayscale(40%)
+}
+
+.grey-section{
+    background-color: lightgray;
 }
