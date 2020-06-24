@@ -1,0 +1,17 @@
+.section-heading {
+    text-align: center;
+}
+
+.section-heading h3 {
+    font-size: 20px;
+    color: #0d9244;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-decoration: underline overline double;
+}
+
+.title-heading h1 {
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: green;
+}
