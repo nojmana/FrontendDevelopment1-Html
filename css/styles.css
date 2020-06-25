@@ -8,10 +8,14 @@ html {
 /* header */
 
 .container-header {
-    height: 200px;
+    height: 180px;
     overflow: hidden;
     position: fixed;
     top: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     width: 100%;
     background-color: white;
@@ -19,17 +23,38 @@ html {
     color: #0d9244;
     text-transform: uppercase;
     font-weight: normal;
-    text-decoration: underline overline double;
+
+    
+    /* text-decoration: underline overline double; */
+}
+
+.header-item {
+    padding:8px 8px;
+}
+
+.container-header div {
+    margin-left: 200px;
+    line-height: 180px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+.header-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: auto;
 }
 
 .container-all {
-    margin-top: 200px;
+    margin-top: 180px;
 }
 
-a, :visited {
-    text-decoration: none;
-    color: black;
-}
+
+
+/* all sections */
 
 .section-heading {
     text-align: center;
@@ -48,6 +73,33 @@ a, :visited {
     margin: 0.5rem;
     color: green;
 }
+
+a, :visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* news */
+
+.news-picture img {
+    height: 200px;
+    border: 2px solid green;
+    padding: 20px;
+}
+
+.news-description h4 {
+    color: green;
+    font-size: 0.9rem;
+}
+
+.news-description p {
+    font-size: 0.6rem;
+}
+
+/* gallery */
+
+
+/* recipies */
 
 .recipies{
     background-position: center;
