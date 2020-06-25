@@ -172,11 +172,10 @@ a, :visited {
 
 /* workshop */
 
-
 .workshop-details {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     padding-left: 100px;
 }
@@ -209,6 +208,69 @@ a, :visited {
         width: 60%;
     }
 }
+
+
+/* gallery */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.gallery-picture {
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+}
+
+.gallery-picture img{
+    width: 450px;
+    height: 450px;
+}
+
+.image-link {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    display: flex;
+}
+
+.gallery-picture:hover .image-link {
+    background-color: green;
+    opacity: 80%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+@media screen and (min-width: 1260px) {
+  .gallery {
+    justify-content: center;
+  }
+
+  .gallery-picture {
+    width: 450px;
+    height: 450px;
+    margin: 10px;
+  }
+
+  .gallery-picture img {
+    width: 450px;
+    height: 450px;
+  }
+
+  .image-link {
+    width: 450px;
+    height: 450px;
+  }
+}
+
 
 /* recipies */
 
