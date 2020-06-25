@@ -61,6 +61,11 @@ body {
 
 /* all sections */
 
+.container-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .section-heading {
     text-align: center;
 }
@@ -218,7 +223,6 @@ a, :visited {
     flex-direction: row;
     width: 100%;
     justify-content: center;
-
 }
 
 .gallery-picture {
@@ -271,12 +275,52 @@ a, :visited {
   }
 }
 
-
 /* recipies */
 
-.recipies{
-    background-position: center;
+.recipies-section {
+    height: 600px;
     background-image: url(../media/images/vegiesBackground.jpg);
-    opacity: 0.9;
-    filter: grayscale(40%)
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    z-index: -1
+}
+
+.recipies {
+    height: 620px;
+    width: 100%;
+    background-color: green;
+    opacity: 70%;
+    position: absolute;
+    top: 0px;
+    color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: -2
+}
+
+.recipies-section h3 {
+    color: white;
+    opacity: 100%;
+}
+
+.recipe {
+    margin: 30px;
+    text-align: center;
+    padding-bottom: 50px;    
+}
+
+.recipe p {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.recipe img {
+    top: 0px;
 }
