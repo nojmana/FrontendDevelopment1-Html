@@ -170,8 +170,45 @@ a, :visited {
 }
 
 
-/* gallery */
+/* workshop */
 
+
+.workshop-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 100px;
+}
+
+.workshop-details a {
+    text-transform: uppercase;
+}
+
+.worshop-details-item {
+    color: green;
+    font-weight: bold;
+    width: 100%;
+}
+
+.worshop-details-item-description {
+    width: 100%;
+}
+
+@media screen and (min-width: 1049px) {
+    .workshop-details {
+        flex-direction: row;
+        margin-left: 10px;
+    }
+    .worshop-details-item {
+        width: 30%;
+        text-align: right;
+        padding-right: 40px;
+    }
+    .worshop-details-item-description {
+        width: 60%;
+    }
+}
 
 /* recipies */
 
