@@ -4,6 +4,10 @@ html {
     font-size: 20px;
 }
 
+body { 
+    margin: 0; 
+}
+
 
 /* header */
 
@@ -12,6 +16,7 @@ html {
     overflow: hidden;
     position: fixed;
     top: 0;
+    z-index: 1;
 
     display: flex;
     flex-direction: row;
@@ -42,7 +47,9 @@ html {
     position: absolute;
     top: 0;
     bottom: 0;
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px; 
     height: auto;
 }
 
@@ -58,18 +65,23 @@ html {
     text-align: center;
 }
 
-.section-heading h3 {
-    font-size: 20px;
-    color: #0d9244;
-    text-transform: uppercase;
-    font-weight: normal;
-    text-decoration: underline overline double;
-}
-
 .section-heading h1 {
     font-size: 2rem;
     margin: 0.5rem;
     color: green;
+}
+
+.section-heading h3 {
+    font-size: 2rem;
+    color: #0d9244;
+    text-transform: uppercase;
+    font-weight: normal;
+    /* text-decoration: underline overline double; */
+    
+}
+
+.grey-section{
+    background-color: lightgray;
 }
 
 a, :visited {
@@ -77,22 +89,86 @@ a, :visited {
     color: black;
 }
 
-/* news */
+/* background */
 
-.news-picture img {
-    height: 200px;
-    border: 2px solid green;
-    padding: 20px;
+#kids-pic img {
+    width: 100%;
 }
 
-.news-description h4 {
+.background-text {
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+}
+
+
+/* news */
+
+.news-section {
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+}
+
+.news h4 {
     color: green;
     font-size: 0.9rem;
 }
 
-.news-description p {
-    font-size: 0.6rem;
+.news p {
+    font-size: 0.5rem;
+    color: black;
+    line-height: normal;
 }
+
+.news-picture {
+    border: 2px solid green;
+    padding: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.news-description {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1049px) {
+    .news-description {
+        width: calc(100% - 400px);
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .news {
+        display: flex;
+        flex-direction: row;
+    }
+    .news-item {
+        width: 25%;
+        flex-direction: column;
+    }
+    .news-description {
+        height: 200px;
+    }
+    .news-item:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+}
+
 
 /* gallery */
 
@@ -104,8 +180,4 @@ a, :visited {
     background-image: url(../media/images/vegiesBackground.jpg);
     opacity: 0.9;
     filter: grayscale(40%)
-}
-
-.grey-section{
-    background-color: lightgray;
 }
