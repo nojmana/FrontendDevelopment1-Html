@@ -335,7 +335,7 @@ a, :visited {
     width: 80%;
     margin: auto auto;
     flex-wrap: wrap;
-
+    padding-bottom: 40px;
 }
 
 .container-parents div{
@@ -345,4 +345,28 @@ a, :visited {
     padding: 10px;
     text-transform: uppercase;
     color: rgb(66, 66, 66)
+}
+
+/* organizers */
+
+
+.container-organizers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto auto;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+
+}
+
+.container-organizers-wrapper{
+    width: 200px;
+    height: 200px;
+    padding: 45px;
+    text-align: center;
+    font-size: 1rem;
+
+
 }
