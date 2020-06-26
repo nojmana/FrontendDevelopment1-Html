@@ -128,7 +128,7 @@ a, :visited {
 }
 
 .news p {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     color: black;
     line-height: normal;
 }
@@ -305,7 +305,6 @@ a, :visited {
 
 .recipies-section h3 {
     color: white;
-    opacity: 100%;
 }
 
 .recipe {
@@ -347,8 +346,8 @@ a, :visited {
     color: rgb(66, 66, 66)
 }
 
-/* organizers */
 
+/* organizers */
 
 .container-organizers {
     display: flex;
@@ -357,8 +356,7 @@ a, :visited {
     width: 80%;
     margin: auto auto;
     flex-wrap: wrap;
-    padding-bottom: 40px;
-
+    padding-bottom: 140px;
 }
 
 .container-organizers-wrapper{
@@ -367,6 +365,14 @@ a, :visited {
     padding: 45px;
     text-align: center;
     font-size: 1rem;
-
-
 }
+
+/* footer */
+
+.container-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
