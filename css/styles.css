@@ -324,3 +324,25 @@ a, :visited {
 .recipe img {
     top: 0px;
 }
+
+
+/* parents */
+
+.container-parents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto auto;
+    flex-wrap: wrap;
+
+}
+
+.container-parents div{
+    border: dashed green;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: rgb(66, 66, 66)
+}
