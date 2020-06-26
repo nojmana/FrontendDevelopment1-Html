@@ -25,3 +25,15 @@ function slideshow() {
     var timeout = 3000;
     setTimeout(slideshow, timeout);
 }
+
+
+//text animation on mouse over
+let test = document.getElementById("js-animation");
+test.addEventListener("mouseenter", function( event ) {   
+  event.target.style.color = "blue";
+
+  var timeout = 1000;
+  setTimeout(function() { 
+      event.target.style.color = "";
+  }, timeout);
+}, false);
